@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cámara de Vigilancia con Panel Solar</title>
+    <title>Landing Page - Venta Contraentrega</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,154 +14,177 @@
             line-height: 1.6;
             color: #333;
         }
-        header {
-            background: #ff5722;
+
+        a {
+            text-decoration: none;
             color: #fff;
-            padding: 20px 0;
+        }
+
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 20px 10px;
             text-align: center;
         }
-        header img {
-            max-width: 100%;
-            height: auto;
+
+        header h1 {
+            margin: 0;
         }
+
         section {
             padding: 20px;
         }
+
         .hero {
+            background: #f4f4f4;
             text-align: center;
+            padding: 40px 20px;
         }
-        .hero h1 {
-            font-size: 2rem;
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
         }
-        .hero p {
-            margin: 10px 0;
-            font-size: 1.2rem;
-        }
+
         .cta-button {
-            background: #ffc107;
-            color: #333;
+            background: #4CAF50;
+            color: #fff;
             padding: 10px 20px;
+            font-size: 1.2em;
             border: none;
-            font-size: 1rem;
+            border-radius: 5px;
             cursor: pointer;
-            margin-top: 10px;
         }
+
+        .cta-button:hover {
+            background: #45a049;
+        }
+
         .benefits {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            justify-content: space-around;
         }
+
         .benefit {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 15px;
             border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            width: 300px;
+            border-radius: 8px;
             text-align: center;
         }
-        .benefit img {
-            max-width: 50px;
-            margin-bottom: 10px;
-        }
-        .offer {
-            background: #ffc107;
-            text-align: center;
-            padding: 20px;
-        }
-        .offer h2 {
-            margin: 0;
-        }
+
         .testimonials {
-            text-align: center;
-        }
-        .testimonial {
-            margin: 10px 0;
-        }
-        .form {
-            max-width: 600px;
-            margin: 0 auto;
+            background: #f9f9f9;
             padding: 20px;
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .form-section input, .form-section button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .form input, .form textarea, .form button {
-            width: 100%;
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form button {
-            background: #ff5722;
-            color: #fff;
-            font-size: 1rem;
-            cursor: pointer;
-        }
+
         footer {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Protege tu hogar con energía solar</h1>
-        <p>Sin cables, sin complicaciones. ¡Paga al recibir por solo <strong>299 soles</strong>!</p>
-        <img src="camara-solar.jpg" alt="Cámara de vigilancia con panel solar">
+
+<header>
+    <h1>Protege tu hogar con energía solar – Sin cables, sin complicaciones.</h1>
+    <p>Fácil instalación, resistente al clima, y 100% autónoma. ¡Paga al recibir por solo 299 soles!</p>
+</header>
+
+<section class="hero">
+    <img src="placeholder.jpg" alt="Cámara de Seguridad en Exterior">
+    <p>
         <button class="cta-button">¡Quiero mi cámara ahora!</button>
-    </header>
+    </p>
+</section>
 
-    <section class="benefits">
-        <div class="benefit">
-            <img src="solar-icon.png" alt="Energía solar">
-            <p><strong>Energía Solar Integrada:</strong> Funciona día y noche sin conexión eléctrica.</p>
-        </div>
-        <div class="benefit">
-            <img src="weather-icon.png" alt="Resistencia al clima">
-            <p><strong>Resistencia a la Intemperie:</strong> Ideal para cualquier clima.</p>
-        </div>
-        <div class="benefit">
-            <img src="installation-icon.png" alt="Fácil instalación">
-            <p><strong>Fácil Instalación:</strong> Sin técnicos, hazlo tú mismo en minutos.</p>
-        </div>
-        <div class="benefit">
-            <img src="mobile-icon.png" alt="Monitoreo en tiempo real">
-            <p><strong>Monitoreo en Tiempo Real:</strong> Compatible con dispositivos móviles.</p>
-        </div>
-    </section>
+<section class="benefits">
+    <div class="benefit">
+        <h3>Energía Solar Integrada</h3>
+        <p>Funciona día y noche sin conexión eléctrica.</p>
+    </div>
+    <div class="benefit">
+        <h3>Resistencia a la Intemperie</h3>
+        <p>Ideal para cualquier clima.</p>
+    </div>
+    <div class="benefit">
+        <h3>Fácil Instalación</h3>
+        <p>Sin técnicos, hazlo tú mismo en minutos.</p>
+    </div>
+    <div class="benefit">
+        <h3>Monitoreo en Tiempo Real</h3>
+        <p>Compatible con dispositivos móviles.</p>
+    </div>
+    <div class="benefit">
+        <h3>Sin Cables, Sin Complicaciones</h3>
+    </div>
+</section>
 
-    <section class="offer">
-        <h2>Precio Regular: 399 soles – <strong>¡HOY solo 299 soles!</strong></h2>
-        <p>Incluye 3 meses de garantía sin costo adicional.</p>
-    </section>
+<section>
+    <h2>Oferta Especial</h2>
+    <p><strong>Precio Regular: 399 soles – ¡HOY solo 299 soles!</strong></p>
+    <p><strong>Incluye 3 meses de garantía sin costo adicional.</strong></p>
+    <div>
+        <h3>Oferta válida hasta hoy a las 11:59 PM</h3>
+    </div>
+</section>
 
-    <section class="testimonials">
-        <h2>Clientes Satisfechos</h2>
-        <div class="testimonial">
-            <p>"Esta cámara me ha dado tranquilidad, funciona perfectamente y no tengo que preocuparme por cables." - Juan Pérez</p>
-        </div>
-        <div class="testimonial">
-            <p>"La instalación fue tan sencilla que no lo podía creer. Muy recomendada." - María López</p>
-        </div>
-    </section>
+<section class="testimonials">
+    <h2>Testimonios de Clientes</h2>
+    <div class="testimonial">
+        <p>"La instalación fue tan fácil como dijeron, ¡y funciona de maravilla incluso en días nublados!" – Ana G.</p>
+    </div>
+    <div class="testimonial">
+        <p>"Nunca imaginé una cámara de seguridad tan asequible y eficiente. ¡Gracias!" – Carlos P.</p>
+    </div>
+</section>
 
-    <section class="form">
-        <h2>Reserva tu cámara ahora</h2>
-        <form action="#" method="POST">
-            <input type="text" name="nombre" placeholder="Nombre completo" required>
-            <input type="tel" name="telefono" placeholder="Número de teléfono" required>
-            <textarea name="direccion" placeholder="Dirección de entrega (distrito, ciudad, referencias)" required></textarea>
-            <input type="number" name="cantidad" placeholder="Cantidad" min="1" value="1" required>
-            <button type="submit">Reservar mi cámara ahora</button>
-        </form>
-    </section>
+<section class="form-section">
+    <h2>Reserva tu Cámara Ahora</h2>
+    <form action="/submit" method="post">
+        <input type="text" name="name" placeholder="Nombre Completo" required>
+        <input type="tel" name="phone" placeholder="Número de Teléfono" required>
+        <input type="text" name="address" placeholder="Dirección de Entrega" required>
+        <input type="number" name="quantity" placeholder="Cantidad (default: 1)" min="1" value="1" required>
+        <button type="submit">Reservar mi cámara ahora</button>
+    </form>
+</section>
 
-    <footer>
-        <p>Contacto: +51 987 654 321 | WhatsApp</p>
-        <p><a href="#" style="color: #ffc107;">Política de Privacidad</a> | <a href="#" style="color: #ffc107;">Términos y Condiciones</a></p>
-    </footer>
+<section>
+    <h2>Preguntas Frecuentes</h2>
+    <p><strong>¿Cuánto demora la entrega?</strong> Normalmente entre 2 y 5 días hábiles.</p>
+    <p><strong>¿Qué incluye la caja?</strong> Una cámara solar, un manual y accesorios de instalación.</p>
+    <p><strong>¿Cómo se realiza el pago?</strong> Paga al recibir tu producto en efectivo.</p>
+</section>
+
+<footer>
+    <p>Contáctanos al <a href="tel:+51999999999">+51 999 999 999</a> o por WhatsApp.</p>
+    <p><a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a></p>
+</footer>
+
 </body>
 </html>
-
